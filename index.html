@@ -1,0 +1,54 @@
+<body bgcolor="#F5D0C5" text="white">
+  <center>
+    <h1>Kevin's Famous Chili</h1>
+
+    <a target="_blank" href="https://www.bingingwithbabish.com/recipes/2017/1/18/kevinschili">Click here for the recipe!</a>
+
+    <br>
+    <br>
+
+    <iframe width="500" height="300" src="https://www.youtube.com/embed/WcYG-5b7448" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" alt="Kevin drops his chili (The Office)" allowfullscreen></iframe>
+    <br>
+
+    <p>Like the clip? Buy Kevin's Chili merch below!
+      <br>
+      <br>
+      <button>
+        <a target="_blank" href="https://represent.com/brian/brian-baumgartner-famous-chili-charity-tee-mug-hoodie/?variant=81872248">Merch!</a>
+      </button>
+    </p>
+    <img width="300" height="370" src="https://pbs.twimg.com/media/DADTiRZUAAApQe9?format=jpg&name=small" alt="Kevin's chili propaganda">
+    <style>
+      body,
+      html {
+        cursor: url("https://pa1.narvii.com/6940/cfb5e6936c4f280a46ba738c842bf170a7a2ef21r1-500-279_128.gif"), progress;
+        height: 100%;
+      }
+    </style>
+    <img src="https://pa1.narvii.com/6940/cfb5e6936c4f280a46ba738c842bf170a7a2ef21r1-500-279_128.gif" alt="kevin dropping his chili again">
+
+    <script>
+      const cd = document.querySelector('[alt="kevin dropping his chili again"]')
+      cd.style.position = 'absolute'
+
+      function animate() {
+        requestAnimationFrame(animate)
+        const time = Date.now()
+        const radius = window.innerWidth * 0.25
+        const scaleX = -0.001
+        const scaleY = 0.0025
+        const offset = {
+          x: window.innerWidth * 0.25,
+          y: window.innerHeight * 0.25
+        }
+        const x = Math.sin(time * scaleX) * radius + offset.x
+        const y = Math.cos(time * scaleY) * radius + offset.y
+        cd.style.left = `${x}px`
+        cd.style.top = `${y}px`
+      }
+
+      window.addEventListener('load', animate)
+    </script>
+
+  </center>
+</body>
